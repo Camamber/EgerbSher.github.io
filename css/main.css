@@ -17,8 +17,30 @@ body{
      background: #000;
 }
 
+section{
+    height: 100vh;
+    padding: 5vmin;
+}
+
 .first{
-    background: url("../img/bg1.png") center no-repeat cover ;
+    background: url("../img/bg1.png") no-repeat center top/ cover;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.st0, .st1{
+    fill: #fff;
+    stroke: #fff;
+    opacity: 1;
+    stroke-width:0;
+}
+
+.reg{
+    display: none;
 }
 
 .wrap{
@@ -33,35 +55,144 @@ body{
 
 .col img{
     height: 8vmax;
-    margin: 3vmin;
+    margin-bottom: 3vmin;
 }
 
 .col p{
-    margin: 3vmin;
+    padding: 3vmin;
     font-size: 3vmax;
+
 }
 
 .reg-button{
     margin: 0 auto;
     text-align: center;
-    margin: 2vmin;
 }
 
 .reg-button:hover{
     background: url("../img/mazok.png") center no-repeat;
     background-size: auto 12vmax;
-    -webkit-animation: Draw 0.5s;
-    -moz-animation: Draw 0.5s;
-    animation: Draw 0.5s;
+    -webkit-animation: Mazok 0.5s;
+    -moz-animation: Mazok 0.5s;
+    -o-animation: Mazok 0.5s;
+    animation: Mazok 0.5s;
 }
 
-.reg-button p{
+.reg-button a{
+    color: #FFFFFF;
+    text-decoration: none;
     font-size: 6vmax;
 }
 
 
+/*INTRO*/
 
-@-webkit-keyframes Draw {
+.st0{
+    stroke-dasharray: 700;
+    animation: Logo-Misc 3s ease-in;
+}
+
+.st1{
+    stroke-dasharray: 3325;
+    animation: Logo-Shield 3s ease-in;
+}
+
+
+@-webkit-keyframes Hide {
+    0%{
+    height : initial;
+  }
+  100%{
+    opacity: 0;
+    height : 0;
+  }
+}
+
+@-moz-keyframes Hide {
+    0%{
+    height : initial;
+  }
+  100%{
+    opacity: 0;
+    height : 0;
+  }
+}
+
+@-o-keyframes Hide {
+    0%{
+    height : initial;
+  }
+  100%{
+    opacity: 0;
+    height : 0;
+  }
+}
+
+@keyframes Hide {
+    0%{
+    height : initial;
+  }
+  100%{
+    opacity: 0;
+    height : 0;
+  }
+}
+
+
+@keyframes Logo-Shield {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 3325;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+         opacity: 1;
+        stroke-dashoffset: 3325;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+
+    }
+
+}
+
+@keyframes Logo-Misc {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 700;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+         opacity: 1;
+        stroke-dashoffset: 700;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+        display: none;
+    }
+
+}
+
+
+/*Mazok animation*/
+
+@-webkit-keyframes Mazok {
     0% {
         background-position: 75% 50%
     }
@@ -70,7 +201,7 @@ body{
     }
 }
 
-@-moz-keyframes Draw {
+@-moz-keyframes Mazok {
     0% {
         background-position: 75% 50%
     }
@@ -79,7 +210,7 @@ body{
     }
 }
 
-@keyframes Draw {
+@keyframes Mazok {
     0% {
         background-position: 75% 50%
     }
@@ -87,10 +218,16 @@ body{
         background-position: 50% 50%
     }
 }
+
+
+
 
 @media screen and (max-width: 640px){
     .col{
         width: 100%;
+    }
+    section{
+        height: 100%;
     }
 
 }

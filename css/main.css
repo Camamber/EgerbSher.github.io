@@ -319,6 +319,9 @@ section{
     .col{
         width: 100%;
     }
+    section{
+    height: 90vh;
+    }
     .wrap{
         height: 75vh;
         flex-direction: column;

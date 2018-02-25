@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "HeaderFont";
+    src: url("../fonts/AA-BEBASNEUE.TTF") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+     font-family: "HeaderFont";
+     color: #fff;
+     background: #000;
+}
+
+.first{
+    background: url("../img/bg1.png") center no-repeat cover ;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 50%;
+    text-align: center;
+}
+
+.col img{
+    height: 8vmax;
+    margin: 3vmin;
+}
+
+.col p{
+    margin: 3vmin;
+    font-size: 3vmax;
+}
+
+.reg-button{
+    margin: 0 auto;
+    text-align: center;
+    margin: 2vmin;
+}
+
+.reg-button:hover{
+    background: url("../img/mazok.png") center no-repeat;
+    background-size: auto 12vmax;
+    -webkit-animation: Draw 0.5s;
+    -moz-animation: Draw 0.5s;
+    animation: Draw 0.5s;
+}
+
+.reg-button p{
+    font-size: 6vmax;
+}
+
+
+
+@-webkit-keyframes Draw {
+    0% {
+        background-position: 75% 50%
+    }
+    100% {
+        background-position: 50% 50%
+    }
+}
+
+@-moz-keyframes Draw {
+    0% {
+        background-position: 75% 50%
+    }
+    100% {
+        background-position: 50% 50%
+    }
+}
+
+@keyframes Draw {
+    0% {
+        background-position: 75% 50%
+    }
+    100% {
+        background-position: 50% 50%
+    }
+}
+
+@media screen and (max-width: 640px){
+    .col{
+        width: 100%;
+    }
+
+}
+

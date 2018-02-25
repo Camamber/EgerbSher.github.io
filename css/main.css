@@ -70,15 +70,6 @@ section{
     text-align: center;
 }
 
-.reg-button:hover{
-    background: url("../img/mazok.png") center no-repeat;
-    background-size: auto 12vmax;
-    -webkit-animation: Mazok 0.5s;
-    -moz-animation: Mazok 0.5s;
-    -o-animation: Mazok 0.5s;
-    animation: Mazok 0.5s;
-}
-
 .reg-button a{
     color: #FFFFFF;
     text-decoration: none;
@@ -324,12 +315,14 @@ section{
     }
 }
 
-
-
-
 @media screen and (max-width: 640px){
     .col{
         width: 100%;
+    }
+    .wrap{
+        height: 75vh;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
 

@@ -9,7 +9,17 @@ $(function () {
         reg.show(500, function() {
         reg.css({position: 'inherit'});
   });
-
     }, 4000);
+
+
+    $(".reg-button a").hover(function() {
+        $(".reg-button").css("background", "url(\"img/mazok.png\") center no-repeat");
+        $(".reg-button").css("background-size","auto 12vmax");
+    },
+    function() {
+        $(".reg-button").css({background: "none"});
+    });
 });
+
+
 

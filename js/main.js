@@ -3,8 +3,13 @@ $(function () {
         reg = $('.reg');
 
     setTimeout(function () {
-           intro.hide(500);
-           reg.show(500);
+        intro.css({position: 'fixed'});
+        reg.css({position: 'fixed'});
+        intro.hide(500);
+        reg.show(500, function() {
+        reg.css({position: 'inherit'});
+  });
+
     }, 4000);
 });
 

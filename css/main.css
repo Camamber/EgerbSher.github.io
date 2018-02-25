@@ -39,6 +39,7 @@ section{
     stroke-width:0;
 }
 
+
 .reg{
     display: none;
 }
@@ -98,48 +99,7 @@ section{
 }
 
 
-@-webkit-keyframes Hide {
-    0%{
-    height : initial;
-  }
-  100%{
-    opacity: 0;
-    height : 0;
-  }
-}
-
-@-moz-keyframes Hide {
-    0%{
-    height : initial;
-  }
-  100%{
-    opacity: 0;
-    height : 0;
-  }
-}
-
-@-o-keyframes Hide {
-    0%{
-    height : initial;
-  }
-  100%{
-    opacity: 0;
-    height : 0;
-  }
-}
-
-@keyframes Hide {
-    0%{
-    height : initial;
-  }
-  100%{
-    opacity: 0;
-    height : 0;
-  }
-}
-
-
-@keyframes Logo-Shield {
+@-webkit-keyframes Logo-Shield {
     0% {
         opacity: 0;
         fill: none;
@@ -148,7 +108,7 @@ section{
     }
     10% {
         fill: none;
-         opacity: 1;
+        opacity: 1;
         stroke-dashoffset: 3325;
     }
     90% {
@@ -159,9 +119,147 @@ section{
         fill: rgba(255,255,255,1);
         stroke-dashoffset: 0;
         stroke-width:0;
-
     }
+}
 
+@-moz-keyframes Logo-Shield {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 3325;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+        opacity: 1;
+        stroke-dashoffset: 3325;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+    }
+}
+
+@-o-keyframes Logo-Shield {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 3325;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+        opacity: 1;
+        stroke-dashoffset: 3325;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+    }
+}
+
+@keyframes Logo-Shield {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 3325;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+        opacity: 1;
+        stroke-dashoffset: 3325;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+    }
+}
+
+
+
+@-webkit-keyframes Logo-Misc {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 700;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+        opacity: 1;
+        stroke-dashoffset: 700;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+    }
+}
+
+@-moz-keyframes Logo-Misc {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 700;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+        opacity: 1;
+        stroke-dashoffset: 700;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+    }
+}
+
+@-o-keyframes Logo-Misc {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 700;
+        stroke-width:3;
+    }
+    10% {
+        fill: none;
+        opacity: 1;
+        stroke-dashoffset: 700;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+        stroke-width:3;
+    }
+    100% {
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+        stroke-width:0;
+    }
 }
 
 @keyframes Logo-Misc {
@@ -173,7 +271,7 @@ section{
     }
     10% {
         fill: none;
-         opacity: 1;
+        opacity: 1;
         stroke-dashoffset: 700;
     }
     90% {
@@ -184,9 +282,7 @@ section{
         fill: rgba(255,255,255,1);
         stroke-dashoffset: 0;
         stroke-width:0;
-        display: none;
     }
-
 }
 
 
@@ -202,6 +298,15 @@ section{
 }
 
 @-moz-keyframes Mazok {
+    0% {
+        background-position: 75% 50%
+    }
+    100% {
+        background-position: 50% 50%
+    }
+}
+
+@-o-keyframes Mazok {
     0% {
         background-position: 75% 50%
     }
@@ -226,9 +331,5 @@ section{
     .col{
         width: 100%;
     }
-    /*section{
-        height: 100%;
-    }*/
-
 }
 

@@ -20,7 +20,7 @@ body{
 #first{
     height: 100vh;
     padding: 5vmin;
-    background: url("../img/bg3.jpg") no-repeat center top/ cover;
+    background: url("../img/bg3.jpg") no-repeat center top/ cover fixed;
 }
 
 #footer{

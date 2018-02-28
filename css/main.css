@@ -20,7 +20,7 @@ body{
 #first{
     height: 100vh;
     padding: 5vmin;
-    background: url("../img/bg2.png") no-repeat center top/ cover;
+    background: url("../img/bg3.jpg") no-repeat center top/ cover;
     /*display: flex;
     flex-direction: column;
     justify-content: center;*/
@@ -33,11 +33,18 @@ body{
    padding: 0.5vmin;
 }
 
+.games{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
 .intro{
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
-    height: 70%;
+    height: 55%;
 }
 
 .st0, .st1{
@@ -47,12 +54,11 @@ body{
     stroke-width:0;
 }
 
-
 .reg{
     display: none;
     margin: 0 auto;
     text-align: center;
-    font-size: 6vmax;
+    font-size: 12vmin;
     padding-top: 6vmin;
 }
 
@@ -61,7 +67,7 @@ body{
     background: rgba(255,255,255,0.5);
     color: #000;
     text-decoration: none;
-    padding:0 3vmin;
+    padding:0 2vmin;
 }
 
 .button a:hover{ 
@@ -286,12 +292,15 @@ body{
 @keyframes Shrink {
     0% {
         height: 100%;
+        margin-top: 0;
     }
     75% {
         height: 100%;
+        margin-top: 0;
     }
     100% {
-        height: 70%;
+        height: 55%;
+        margin-top: 10vh;
     }
 }
 

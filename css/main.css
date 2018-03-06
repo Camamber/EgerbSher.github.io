@@ -23,11 +23,24 @@ body{
     background: url("../img/bg3.jpg") no-repeat center top/ cover fixed;
 }
 
+#info{
+    padding: 5vmin;
+    background: #6c0f05;
+    font-size: 5vmin;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #footer{
    background: rgba(255,255,255,0.5);
    text-align: center;
    color: #000;
    padding: 0.5vmin;
+}
+
+.list-heading{
+    font-weight: normal;
 }
 
 .games{
@@ -73,6 +86,23 @@ body{
 .button a:hover{ 
     color: #fff;
 }
+
+#info div{
+    width: 50%;
+    margin: 5vmin 0;
+    text-align: center;
+    font-size: 6vmin;
+}
+
+#info img{
+    margin-bottom: 3vmin;
+    height: 20vmin;
+}
+
+#info a{
+    color: #fff;
+}
+
 
 
 /*INTRO*/
@@ -351,6 +381,16 @@ body{
 
 
 @media screen and (max-width: 640px){
-
+    #info div{
+        width: 100%;
+    }
 }
+@media screen and (max-width: 640px){
+    #info div{
+        font-size: 6.6vmin;
+    }
+}
+
+
+
 

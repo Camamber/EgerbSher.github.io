@@ -43,14 +43,18 @@ body{
     font-weight: normal;
 }
 
-.games{
+.head-bar{
     display: flex;
     justify-content: flex-end;
 }
 
-.games img{
+.head-bar img{
     height: 5vmin;
     padding-left: 4vmin;
+}
+
+.social {
+    padding-right: 4vmin;
 }
 
 

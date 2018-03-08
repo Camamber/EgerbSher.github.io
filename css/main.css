@@ -100,7 +100,7 @@ body{
 
 #info img{
     margin-bottom: 3vmin;
-    height: 20vmin;
+    height: 18vmin;
 }
 
 #info a{
@@ -388,6 +388,9 @@ body{
     #info div{
         width: 100%;
     }
+    #info img{
+    height: 20vmin;
+}
 }
 @media screen and (max-width: 640px){
     #info div{

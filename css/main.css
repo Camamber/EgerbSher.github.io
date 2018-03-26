@@ -20,7 +20,7 @@ body{
 #first{
     height: 100vh;
     padding: 5vmin;
-    background: url("../img/bg3.jpg") no-repeat center top/ cover fixed;
+    background: url("../img/section1.jpg") no-repeat center top/ cover fixed;
 }
 
 #info{
@@ -30,6 +30,13 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+#sponsors{
+    text-align: center;
+    padding: 5vmin;
+    background: url("../img/section3.jpg") no-repeat center top/ cover fixed;
+    font-size: 5vmin;  
 }
 
 #footer{
@@ -91,7 +98,7 @@ body{
     color: #fff;
 }
 
-#info div{
+.col-50{
     width: 50%;
     margin: 5vmin 0;
     text-align: center;
@@ -106,6 +113,27 @@ body{
 #info a{
     color: #fff;
 }
+
+h1{
+    font-weight: normal;
+    text-align: center;
+    font-size: 9vmin;
+}
+
+
+#sponsors .wrap{
+    margin-top: 3vmin;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ 
+#sponsors img{
+    margin-bottom: 3vmin;
+    height: 16vmin;
+}
+
+
 
 
 
@@ -385,7 +413,7 @@ body{
 
 
 @media screen and (max-width: 640px){
-    #info div{
+    .col-50{
         width: 100%;
     }
     #info img{
@@ -393,7 +421,7 @@ body{
 }
 }
 @media screen and (max-width: 640px){
-    #info div{
+    .col-50{
         font-size: 6.6vmin;
     }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	
@@ -34,20 +34,23 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- <link rel="icon" href="images/favicon.ico"> -->
-
 </head>
 <body>
 	<section id="first">
 		<div class="head-bar">
+			<nav>
+				<a href="rush.kpi.ua">Главная</a>
+				<a href="tournament">Турнирные сетки</a>
+				<a href="broadcast">Трансляции</a>
+			</nav>
 			<div class="social">
 				<a href="https://t.me/RUSH_League"><img src="img/telegram.png" alt="Telegram"></a>
 				<a href="https://www.instagram.com/rush_league"><img src="img/instagram.png" alt="Instagram"></a>
-				<a href="https://www.facebook.com/RUSHCyberLeague"><img src="img/facebook.png" alt="Facebook"></a>
+				<a class = "del" href="https://www.facebook.com/RUSHCyberLeague"><img src="img/facebook.png" alt="Facebook"></a>
+				<a href="https://t.me/DOTA2_Rush_League"><img src="img/dota.png" alt="Dota2"></a>
+				<a href="https://t.me/CS_GO_Rush_League"><img src="img/csgo.png" alt="CS:GO"></a>
 			</div>
-			<a href="https://t.me/Rush_League_1vs1"><img src="img/1vs1.png" alt="1VS1"></a>
-			<a href="https://t.me/DOTA2_Rush_League"><img src="img/dota.png" alt="Dota2"></a>
-			<a href="https://t.me/CS_GO_Rush_League"><img src="img/csgo.png" alt="CS:GO"></a>
+			
 		</div>
 		<div class="intro">
 			<svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" viewBox="0 0 968 664" xml:space="preserve">
@@ -190,7 +193,7 @@
 			</svg>
 		</div>
 		<div class="reg button">
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLScvddGE3cTejnM5kLzERgiPSYszt2TPJ_bAE13Fj1puJ84Eyg/viewform">REGISTRATION</a>
+			<a href="tournament">Турнирные сетки</a>
 		</div>
 	</section>
 	<section id="info">
